@@ -9,36 +9,33 @@
 </head>
 
 <body class="">
-    <form class = " position-relative position-absolute top-50 start-50 translate-middle rounded-3 ">
-        <div>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Digite seu nome">
-            <p id="errorname"></p>
-        </div>
 
-
-        <div>
-            <label for="tel">Telefone</label>
-            <input type="number" placeholder="Digite seu telefone" id="number">
-            <p id="errortelefone"></p>
-        </div>
-
-
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="text" id="email" placeholder="Digite seu email">
-            <p id="erroremail"></p>
-        </div>
-
-        <div>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" placeholder="Digite sua Senha">
-            <p id="errorpassword"></p>
-        </div>
-
-        <button  type="submit">Entar</button>
-        <p id="sucessform"></p>
-    </form>
+    <div class="container">
+        <form class = " position-relative position-absolute top-50 start-50 translate-middle rounded-2 ">
+            <div>
+                <label class="form-label " for="name">Nome:</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Digite seu nome">
+                <p id="errorname"></p>
+            </div>
+            <div>
+                <label for="tel">Telefone:</label>
+                <input class="form-control" type="number" placeholder="Digite seu telefone" id="number">
+                <p id="errortelefone"></p>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input class="form-control" type="text" id="email" placeholder="Digite seu email">
+                <p id="erroremail"></p>
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input class="form-control" type="password" id="password" placeholder="Digite sua Senha">
+                <p id="errorpassword"></p>
+            </div>
+            <button  type="submit">Entar</button>
+            <p id="sucessform"></p>
+        </form>
+    </div>
 
     <script src="index.js"></script>
 </body>
