@@ -8,8 +8,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+label{
+    display: none;
+}
  p{
-   
+   font-size: 15px;
+   margin: 0px;
+   text-align: center;
    color: rgb(255, 27, 27);
 }
 body{
@@ -21,6 +26,7 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+
 
 
 
@@ -84,7 +90,7 @@ body{
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translateY(10px);
+    transform: translateY(-12px);
     font-size: 20px;
 }   
 .container #sucessform{
