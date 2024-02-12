@@ -2,7 +2,8 @@ let email = document.getElementById('email');
 let name_ = document.getElementById('name');
 let password = document.getElementById('password');
 let telefone = document.getElementById('number');
-let form = document.querySelector('form')
+let form = document.querySelector('form');
+const paragrafos = document.querySelectorAll('p')
 
 // let errorname = document.getElementById('errorname')
 
@@ -33,7 +34,8 @@ form.addEventListener('submit', (e) => {
 
 function validarForm() {
     if (email.value !== "" && name_.value !== "" && telefone.value !== "" && password.value !== "") {
-        sucessform.innerText = "Formulario enviado com sucesso!"
+        sucessform.innerText = "Formulario enviado com sucesso!";
+        // paragrafos.style.display = "none";
 
 
         console.log(email.value);
