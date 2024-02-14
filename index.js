@@ -3,8 +3,6 @@ let name_ = document.getElementById('name');
 let password = document.getElementById('password');
 let telefone = document.getElementById('number');
 let form = document.querySelector('form');
-const paragrafos = document.querySelectorAll('p')
-
 // let errorname = document.getElementById('errorname')
 
 
@@ -35,7 +33,13 @@ form.addEventListener('submit', (e) => {
 function validarForm() {
     if (email.value !== "" && name_.value !== "" && telefone.value !== "" && password.value !== "") {
         sucessform.innerText = "Formulario enviado com sucesso!";
-        // paragrafos.style.display = "none";
+        
+        // removendo os p//
+        let paragrafos = document.querySelectorAll('p');
+
+        paragrafos.forEach(function(paragrafos){
+                     paragrafos.remove();
+        });
 
 
         console.log(email.value);
